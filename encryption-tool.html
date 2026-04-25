@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Encryption Tool | Shreyas</title>
+<title>Encryption Tool | Shreyas Ramkumar</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,7 +24,7 @@
 
 <section>
 
-<div class="card">
+<div class="card hidden">
 <h2>Overview</h2>
 <p>
 Developed a secure file encryption system implementing AES-128 encryption using Fernet.
@@ -33,7 +33,7 @@ and forensic tracking of file operations.
 </p>
 </div>
 
-<div class="card">
+<div class="card hidden">
 <h2>Key Features</h2>
 <ul>
 <li>Encryption and decryption using symmetric key cryptography</li>
@@ -44,12 +44,12 @@ and forensic tracking of file operations.
 </ul>
 </div>
 
-<div class="card">
+<div class="card hidden">
 <h2>Tools & Technologies</h2>
 <p>Python, Fernet (AES-128), SHA-256, Colorama</p>
 </div>
 
-<div class="card">
+<div class="card hidden">
 <h2>Workflow & Output</h2>
 
 <img src="menu.png">
@@ -58,12 +58,27 @@ and forensic tracking of file operations.
 
 </div>
 
-<div class="card">
+<div class="card hidden">
 <a href="index.html">⬅ Back to Portfolio</a>
 <a href="https://github.com/Shreyas993/file-encryptor" target="_blank">View on GitHub</a>
 </div>
 
 </section>
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show"); // 👈 THIS LINE FIXES IT
+        }
+    });
+}, {
+    threshold: 0.2
+});
 
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
