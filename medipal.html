@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>MEDIPAL | Shreyas</title>
+<title>MEDIPAL | Shreyas Ramkumar</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,7 +24,7 @@
 
 <section>
 
-<div class="card">
+<div class="card hidden">
 <h2>Overview</h2>
 <p>
 Designed and developed the frontend of a healthcare web platform to enable seamless interaction
@@ -33,7 +33,7 @@ for handling sensitive healthcare information.
 </p>
 </div>
 
-<div class="card">
+<div class="card hidden">
 <h2>Key Features</h2>
 <ul>
 <li>User-friendly patient and doctor interfaces</li>
@@ -43,12 +43,12 @@ for handling sensitive healthcare information.
 </ul>
 </div>
 
-<div class="card">
+<div class="card hidden">
 <h2>Tools & Technologies</h2>
 <p>HTML, CSS, JavaScript, PHP</p>
 </div>
 
-<div class="card">
+<div class="card hidden">
 <h2>Preview</h2>
 
 <img src="medipal.png">
@@ -59,12 +59,27 @@ for handling sensitive healthcare information.
 
 </div>
 
-<div class="card">
+<div class="card hidden">
 <a href="index.html">⬅ Back to Portfolio</a>
 <a href="https://github.com/Shreyas993/Medipal" target="_blank">View on GitHub</a>
 </div>
 
 </section>
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show"); // 👈 THIS LINE FIXES IT
+        }
+    });
+}, {
+    threshold: 0.2
+});
 
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
