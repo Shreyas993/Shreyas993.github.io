@@ -20,7 +20,7 @@
 <header>
     <h1>Shreyas Ramkumar</h1>
     <p>Master’s Student in Cybersecurity @ RMIT University</p>
-    <p>Aspiring SOC Analyst | Network Security | Threat Detection</p>
+    <p><span id="typing"></span></p>
 </header>
 
 <section>
@@ -110,6 +110,39 @@
 </div>
 
 </section>
+<script>
+const texts = [
+    "Aspiring SOC Analyst",
+    "Network Traffic Analysis",
+    "Threat Detection & Incident Response"
+];
 
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type() {
+    if (count === texts.length) {
+        count = 0;
+    }
+
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.getElementById("typing").textContent = letter;
+
+    if (letter.length === currentText.length) {
+        setTimeout(() => {
+            index = 0;
+            count++;
+            type();
+        }, 1500);
+    } else {
+        setTimeout(type, 60);
+    }
+})();
+</script>
+    
 </body>
 </html>
