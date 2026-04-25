@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Network Traffic Analyzer | Shreyas</title>
+    <title>Network Traffic Analyzer | Shreyas Ramkumar</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
  <nav>
-    <h3>Shreyas</h3>
+    <h3>Shreyas Ramkumar</h3>
     <div>
         <a href="index.html">Home</a>
         <a href="index.html#about">About</a>
@@ -24,7 +24,7 @@
 
 <section>
 
-<div class="card">
+<div class="card hidden">
     <h2>Overview</h2>
     <p>
         This project is a real-time network monitoring tool designed to capture, analyse, and visualise live packet-level traffic.
@@ -32,7 +32,7 @@
     </p>
 </div>
 
-<div class="card">
+<div class="card hidden">
     <h2>Key Features</h2>
     <ul>
         <li>Live packet capture with protocol filtering</li>
@@ -43,12 +43,12 @@
     </ul>
 </div>
 
-<div class="card">
+<div class="card hidden">
     <h2>Tools & Technologies</h2>
     <p>Python, Scapy, Matplotlib, Tkinter, Colorama</p>
 </div>
 
-<div class="card">
+<div class="card hidden">
     <h2>Output & Visualisation</h2>
 
     <img src="packets.png">
@@ -56,12 +56,27 @@
     <img src="visuals.png">
 </div>
 
-<div class="card">
+<div class="card hidden">
     <a href="index.html">⬅ Back to Portfolio</a>
     <a href="https://github.com/Shreyas993/real-time-network-traffic-analyzer" target="_blank">View on GitHub</a>
 </div>
 
 </section>
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show"); // 👈 THIS LINE FIXES IT
+        }
+    });
+}, {
+    threshold: 0.2
+});
 
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
