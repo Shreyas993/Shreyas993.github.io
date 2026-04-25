@@ -25,7 +25,7 @@
 
 <section>
     <h2 id="about">About Me</h2>
-<div class="card">
+<div class="card hidden">
     <p>
         Cybersecurity postgraduate student at RMIT University with hands-on experience in network traffic analysis,
         threat detection, and security operations. Skilled in tools such as Wireshark, Nmap, and Python for analysing
@@ -39,7 +39,7 @@
 
 <h2 id="projects">Projects</h2>
 
-<div class="card">
+<div class="card hidden">
     <h3>Real-Time Network Traffic Analyzer</h3>
     <p>
         Developed a real-time network monitoring tool to capture and analyse live packet traffic,
@@ -48,7 +48,7 @@
     <a href="network-analyzer.html">View Project</a>
 </div>
 
-<div class="card">
+<div class="card hidden">
     <h3>Secure File Encryption Tool</h3>
     <p>
         Built a secure file encryption system using AES-128 (Fernet) with SHA-256 hashing for
@@ -57,7 +57,7 @@
     <a href="encryption-tool.html">View Project</a>
 </div>
 
-<div class="card">
+<div class="card hidden">
     <h3>MEDIPAL - Secure Healthcare Portal</h3>
     <p>
         Designed a frontend healthcare platform enabling patient-doctor interaction with structured workflows
@@ -68,7 +68,7 @@
 
     <h2 id="skills">Skills</h2>
 
-<div class="card">
+<div class="card hidden">
     <p><strong>Security Tools:</strong> Wireshark, Nmap, Kali Linux</p>
     <p><strong>Programming:</strong> Python, C</p>
     <p><strong>Concepts:</strong> Network Traffic Analysis, Threat Detection, Incident Analysis, Vulnerability Assessment, OWASP Top 10, SIEM Fundamentals</p>
@@ -77,7 +77,7 @@
 
     <h2 id="experience">Experience</h2>
 
-<div class="card">
+<div class="card hidden">
     <h3>Cyber Security Intern</h3>
     <p><strong>ES Ethic Secur SofTec Pvt Ltd | Aug 2024 – Sept 2024</strong></p>
 
@@ -90,7 +90,7 @@
 </div>
 
     <h2 id="contact">Contact</h2>
-<div class="card">
+<div class="card hidden">
     <p><strong>Email:</strong> 
         <a href="mailto:shreyasram0308@gmail.com">shreyasram0308@gmail.com</a>
     </p>
@@ -142,6 +142,18 @@ let letter = "";
         setTimeout(type, 60);
     }
 })();
+</script>
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach(el => observer.observe(el));
 </script>
     
 </body>
