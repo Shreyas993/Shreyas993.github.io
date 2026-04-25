@@ -83,3 +83,6 @@ img, video {
     margin-top: 10px;
     border-radius: 10px;
 }
+section {
+    scroll-margin-top: 80px;
+}
