@@ -1567,3 +1567,24 @@ video {
     }
 
 }
+
+/* ===================================
+   MINIMAL FOOTER
+=================================== */
+
+footer {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 40px 20px 55px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255,255,255,0.05);
+
+    color: #64748b;
+
+    font-size: 0.95rem;
+}
