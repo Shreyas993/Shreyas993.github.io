@@ -1482,3 +1482,88 @@ video {
 
     margin-bottom: 14px;
 }
+
+
+/* ===================================
+   CONTACT SECTION FINAL
+=================================== */
+
+.contact-wrapper {
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(56,189,248,0.12),
+            rgba(14,165,233,0.04)
+        );
+
+    border: 1px solid rgba(56,189,248,0.14);
+
+    border-radius: 40px;
+
+    padding: 80px 50px;
+
+    text-align: center;
+
+    backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 0 45px rgba(56,189,248,0.08),
+        0 10px 40px rgba(0,0,0,0.22);
+}
+
+.contact-tag {
+
+    color: #38bdf8;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 24px;
+
+    font-size: 0.9rem;
+}
+
+.contact-wrapper h2 {
+
+    color: white;
+
+    font-size: 3.2rem;
+
+    margin-bottom: 28px;
+
+    line-height: 1.2;
+}
+
+.contact-description {
+
+    color: #94a3b8;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    line-height: 2;
+
+    font-size: 1.08rem;
+}
+
+.contact-buttons {
+
+    margin-top: 50px;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .contact-wrapper {
+
+        padding: 60px 30px;
+    }
+
+    .contact-wrapper h2 {
+
+        font-size: 2.3rem;
+    }
+
+}
