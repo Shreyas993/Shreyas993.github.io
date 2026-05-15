@@ -374,3 +374,116 @@ video {
         padding: 60px 20px;
     }
 }
+
+/* =========================
+   PROJECT HERO
+========================= */
+
+.project-hero {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background:
+        radial-gradient(circle at top left, rgba(56,189,248,0.15), transparent 25%),
+        radial-gradient(circle at bottom right, rgba(14,165,233,0.12), transparent 25%),
+        #0f172a;
+}
+
+.project-hero-content {
+    max-width: 900px;
+}
+
+.project-category {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.project-hero h1 {
+    font-size: 3.8rem;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.project-subtitle {
+    color: #94a3b8;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* =========================
+   TECH STACK BADGES
+========================= */
+
+.project-tech-stack {
+    margin-top: 35px;
+}
+
+.project-tech-stack span {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    background: rgba(56,189,248,0.12);
+    color: #38bdf8;
+    font-size: 0.9rem;
+}
+
+/* =========================
+   VISUAL GRID
+========================= */
+
+.visual-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.visual-grid img {
+    transition: 0.3s ease;
+}
+
+.visual-grid img:hover {
+    transform: scale(1.01);
+}
+
+/* =========================
+   PROJECT LINKS
+========================= */
+
+.project-links {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.project-links a {
+    margin: 12px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .project-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .project-subtitle {
+        font-size: 1rem;
+    }
+
+}
+
+
+
