@@ -1645,3 +1645,43 @@ h3 i {
 
     vertical-align: middle;
 }
+
+/* ===================================
+   TYPOGRAPHY REFINEMENT
+=================================== */
+
+.section-title h2 {
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+.hero h1 {
+
+    letter-spacing: -2px;
+}
+
+.hero-description,
+.about-card p,
+.featured-project-content p,
+.timeline-content p,
+.contact-description {
+
+    max-width: 75ch;
+}
+
+.project-type,
+.hero-tag,
+.contact-tag,
+.section-title p {
+
+    font-weight: 600;
+}
+
+.featured-project-content h3,
+.about-card h3,
+.timeline-header h3 {
+
+    line-height: 1.3;
+}
