@@ -1462,3 +1462,23 @@ video {
     }
 
 }
+
+/* ===================================
+   EXPERIENCE BULLETS
+=================================== */
+
+.experience-points {
+
+    margin-top: 10px;
+
+    padding-left: 22px;
+}
+
+.experience-points li {
+
+    color: #94a3b8;
+
+    line-height: 2;
+
+    margin-bottom: 14px;
+}
