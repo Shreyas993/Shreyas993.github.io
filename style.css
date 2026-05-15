@@ -2,6 +2,72 @@
    RESET
 =================================== */
 
+/* ===================================
+   BACKGROUND EFFECTS
+=================================== */
+
+.background-glow {
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    background: rgba(56,189,248,0.12);
+
+    filter: blur(120px);
+
+    border-radius: 50%;
+
+    top: -150px;
+    left: -150px;
+
+    z-index: -3;
+
+    animation: floatGlow 12s ease-in-out infinite;
+}
+
+.glow2 {
+    top: auto;
+    left: auto;
+
+    bottom: -150px;
+    right: -150px;
+
+    background: rgba(14,165,233,0.10);
+
+    animation-delay: 3s;
+}
+
+.background-grid {
+    position: fixed;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+
+    background-size: 40px 40px;
+
+    z-index: -4;
+}
+
+@keyframes floatGlow {
+
+    0% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+    50% {
+        transform: translateY(30px) translateX(20px);
+    }
+
+    100% {
+        transform: translateY(0px) translateX(0px);
+    }
+
+}
+
 * {
     margin: 0;
     padding: 0;
