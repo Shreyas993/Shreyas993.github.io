@@ -1,29 +1,39 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* SMOOTH SCROLL */
+/* =========================
+   GLOBAL
+========================= */
+
 html {
     scroll-behavior: smooth;
 }
 
-/* BODY */
 body {
     font-family: 'Segoe UI', sans-serif;
     background: #0f172a;
     color: #e2e8f0;
+    overflow-x: hidden;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
+
 nav {
     position: sticky;
     top: 0;
-    background: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(10px);
-    padding: 15px 40px;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.82);
+    backdrop-filter: blur(14px);
+    padding: 18px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -33,159 +43,48 @@ nav {
 
 nav h3 {
     color: #38bdf8;
+    font-size: 1.2rem;
     font-weight: 600;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #cbd5f5;
-    font-size: 0.95em;
-    transition: 0.2s;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    transition: 0.25s ease;
+    position: relative;
 }
 
 nav a:hover {
     color: #38bdf8;
 }
 
-/* HEADER */
-header {
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    padding: 80px 20px 60px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.8em;
-    margin-bottom: 10px;
-}
-
-header p {
-    color: #94a3b8;
-    font-size: 1.1em;
-}
-
-/* SECTIONS */
-section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 50px 20px;
-}
-
-/* FIX HEADING OFFSET */
-h2 {
-    scroll-margin-top: 110px;
-    border-left: 4px solid #38bdf8;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    color: #38bdf8;
-}
-
-/* CARDS */
-.card {
-    background: #1e293b;
-    padding: 25px;
-    margin-top: 20px;
-    border-radius: 14px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    transition: 0.25s ease;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-    background: #334155;
-}
-
-/* TEXT */
-p {
-    line-height: 1.6;
-    color: #cbd5f5;
-}
-
-ul {
-    padding-left: 20px;
-    margin-top: 10px;
-}
-
-li {
-    margin-bottom: 6px;
-}
-
-/* BUTTONS */
-a {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 18px;
-    background: #38bdf8;
-    color: #0f172a;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 0.9em;
-    transition: 0.2s;
-}
-
-a:hover {
-    background: #0ea5e9;
-    transform: translateY(-2px);
-}
-
-/* MEDIA */
-img, video {
-    width: 100%;
-    margin-top: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-/* SMALL SCREENS */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav a {
-        margin: 10px;
-    }
-}
-#typing::after {
-    content: "|";
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    0%, 50%, 100% { opacity: 1; }
-    25%, 75% { opacity: 0; }
-}
-/* Hidden state */
-.hidden {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s ease;
-}
-
-/* Visible state */
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
 nav a.active {
     color: #38bdf8;
-    font-weight: 600;
-    border-bottom: 2px solid #38bdf8;
-    padding-bottom: 2px;
 }
 
-/* HERO SECTION */
+nav a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #38bdf8;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
 
 .hero {
-    min-height: 90vh;
+    min-height: 92vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,19 +109,20 @@ nav a.active {
 
 .hero h1 {
     font-size: 4rem;
-    margin-bottom: 15px;
     color: white;
+    margin-bottom: 15px;
+    line-height: 1.1;
 }
 
 .hero h2 {
     font-size: 1.8rem;
     color: #38bdf8;
-    min-height: 50px;
+    min-height: 55px;
 }
 
 .hero-description {
     margin-top: 25px;
-    font-size: 1.1rem;
+    font-size: 1.08rem;
     line-height: 1.8;
     color: #94a3b8;
 }
@@ -233,4 +133,244 @@ nav a.active {
 
 .hero-buttons a {
     margin: 10px;
+}
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+h2 {
+    scroll-margin-top: 120px;
+    color: #38bdf8;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 60%;
+    height: 3px;
+    background: #38bdf8;
+    border-radius: 10px;
+}
+
+/* =========================
+   GENERAL CARD
+========================= */
+
+.card {
+    background: rgba(30, 41, 59, 0.72);
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 28px;
+    margin-top: 25px;
+    border-radius: 18px;
+    backdrop-filter: blur(14px);
+    transition: 0.3s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(56,189,248,0.25);
+    box-shadow: 0 0 30px rgba(56,189,248,0.12);
+}
+
+/* =========================
+   PROJECT GRID
+========================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+    margin-top: 35px;
+}
+
+.project-card {
+    background: rgba(30, 41, 59, 0.72);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    backdrop-filter: blur(14px);
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(56,189,248,0.35);
+    box-shadow: 0 0 30px rgba(56,189,248,0.18);
+}
+
+.project-content {
+    padding: 30px;
+}
+
+.project-type {
+    color: #38bdf8;
+    font-size: 0.78rem;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.project-card h3 {
+    color: white;
+    margin-bottom: 16px;
+    font-size: 1.45rem;
+}
+
+.project-card p {
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+.project-tags {
+    margin-top: 22px;
+}
+
+.project-tags span {
+    display: inline-block;
+    padding: 7px 14px;
+    margin: 5px 6px 0 0;
+    border-radius: 30px;
+    background: rgba(56,189,248,0.12);
+    color: #38bdf8;
+    font-size: 0.8rem;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+p {
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 12px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #cbd5e1;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+a {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 20px;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #0f172a;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s ease;
+}
+
+a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(56,189,248,0.35);
+}
+
+/* =========================
+   MEDIA
+========================= */
+
+img,
+video {
+    width: 100%;
+    margin-top: 18px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   TYPING CURSOR
+========================= */
+
+#typing::after {
+    content: "|";
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 20px;
+    }
+
+    nav div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 8px 12px;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
+    }
+
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
 }
