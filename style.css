@@ -584,3 +584,23 @@ video {
         grid-template-columns: 1fr;
     }
 }
+
+/* ===================================
+   HERO GLASS CARD
+=================================== */
+
+.project-hero-card {
+    background: rgba(15, 23, 42, 0.72);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(16px);
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 0 40px rgba(56,189,248,0.08),
+        0 10px 40px rgba(0,0,0,0.25);
+}
