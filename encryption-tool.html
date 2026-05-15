@@ -1,84 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Encryption Tool | Shreyas Ramkumar</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encryption Tool | Shreyas</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
- <nav>
-    <h3>Shreyas Ramkumar</h3>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#contact">Contact</a>
-    </div>
- </nav>
-<header>
-<h1>Secure File Encryption Tool</h1>
-<p>Detailed Project Overview</p>
-</header>
 
-<section>
+    <!-- NAVBAR -->
 
-<div class="card hidden">
-<h2>Overview</h2>
-<p>
-Developed a secure file encryption system implementing AES-128 encryption using Fernet.
-Integrated SHA-256 hashing to ensure file integrity and added logging mechanisms for auditing
-and forensic tracking of file operations.
-</p>
-</div>
+    <nav>
+        <h3>Shreyas</h3>
 
-<div class="card hidden">
-<h2>Key Features</h2>
-<ul>
-<li>Encryption and decryption using symmetric key cryptography</li>
-<li>SHA-256 hashing for integrity verification</li>
-<li>Activity logging for auditing and traceability</li>
-<li>Error handling for invalid keys and corrupted files</li>
-<li>User-friendly CLI with structured interface</li>
-</ul>
-</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
 
-<div class="card hidden">
-<h2>Tools & Technologies</h2>
-<p>Python, Fernet (AES-128), SHA-256, Colorama</p>
-</div>
+    <!-- HERO -->
 
-<div class="card hidden">
-<h2>Output & Visualisation</h2>
+    <section class="project-showcase">
 
-<img src="menu.png">
-<img src="encrypt.png">
-<img src="decrypt.png">
+        <div class="project-hero-card hidden">
 
-</div>
+            <p class="project-label">
+                DATA SECURITY PROJECT
+            </p>
 
-<div class="card hidden">
-<a href="index.html">⬅ Back to Portfolio</a>
-<a href="https://github.com/Shreyas993/file-encryptor" target="_blank">View on GitHub</a>
-</div>
+            <h1>
+                Secure File Encryption Tool
+            </h1>
 
-</section>
-<script>
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        } else {
-            entry.target.classList.remove("show"); // 👈 THIS LINE FIXES IT
-        }
-    });
-}, {
-    threshold: 0.2
-});
+            <p class="project-description">
+                Professional file encryption and decryption platform implementing
+                AES-128 encryption using Fernet, SHA-256 integrity verification,
+                forensic logging, and secure file handling workflows.
+            </p>
 
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach(el => observer.observe(el));
-</script>
+            <div class="project-badges">
+                <span>Python</span>
+                <span>Fernet</span>
+                <span>SHA-256</span>
+                <span>Colorama</span>
+            </div>
+
+        </div>
+
+        <div class="project-showcase-image hidden">
+
+            <img src="encrypt.png" alt="Encryption Tool">
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section>
+
+        <div class="stats-grid">
+
+            <div class="stat-card hidden">
+                <h2>AES-128</h2>
+                <p>Secure Encryption</p>
+            </div>
+
+            <div class="stat-card hidden">
+                <h2>SHA-256</h2>
+                <p>Integrity Verification</p>
+            </div>
+
+            <div class="stat-card hidden">
+                <h2>Logs</h2>
+                <p>Forensic Tracking</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- OVERVIEW -->
+
+    <section>
+
+        <div class="split-layout">
+
+            <div class="split-text hidden">
+
+                <h2>Project Overview</h2>
+
+                <p>
+                    This project was developed to securely encrypt and decrypt
+                    files while maintaining file integrity and audit logging.
+                    The system implements symmetric encryption using Fernet
+                    and generates SHA-256 hashes for integrity verification.
+                </p>
+
+                <p>
+                    The tool also maintains activity logs and hash records,
+                    supporting secure workflows and forensic traceability
+                    during file operations.
+                </p>
+
+            </div>
+
+            <div class="split-image hidden">
+
+                <img src="menu.png" alt="Encryption Menu">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <section>
+
+        <h2>Core Features</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card hidden">
+
+                <h3>File Encryption</h3>
+
+                <p>
+                    Encrypts files securely using AES-128 symmetric encryption.
+                </p>
+
+            </div>
+
+            <div class="feature-card hidden">
+
+                <h3>Integrity Verification</h3>
+
+                <p>
+                    Generates SHA-256 hashes to verify file integrity and detect tampering.
+                </p>
+
+            </div>
+
+            <div class="feature-card hidden">
+
+                <h3>Forensic Logging</h3>
+
+                <p>
+                    Tracks encryption and decryption activities through structured logs.
+                </p>
+
+            </div>
+
+            <div class="feature-card hidden">
+
+                <h3>Error Handling</h3>
+
+                <p>
+                    Handles invalid keys, corrupted files, and missing file scenarios safely.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VISUALS -->
+
+    <section>
+
+        <h2>Project Visuals</h2>
+
+        <div class="showcase-grid">
+
+            <!-- CARD 1 -->
+
+            <div class="showcase-card hidden">
+
+                <div class="showcase-info">
+
+                    <h3>Main Menu Interface</h3>
+
+                    <p>
+                        Professional CLI interface providing structured access
+                        to encryption and decryption operations.
+                    </p>
+
+                </div>
+
+                <img src="menu.png" alt="Main Menu">
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="showcase-card hidden">
+
+                <div class="showcase-info">
+
+                    <h3>Encryption Workflow</h3>
+
+                    <p>
+                        Secure file encryption process with SHA-256 integrity
+                        verification and structured activity logging.
+                    </p>
+
+                </div>
+
+                <img src="encrypt.png" alt="Encryption Workflow">
+
+            </div>
+
+            <!-- CARD 3 -->
+
+            <div class="showcase-card hidden">
+
+                <div class="showcase-info">
+
+                    <h3>Decryption Workflow</h3>
+
+                    <p>
+                        Secure decryption process with validation checks
+                        and protected file recovery handling.
+                    </p>
+
+                </div>
+
+                <img src="decrypt.png" alt="Decryption Workflow">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section>
+
+        <div class="cta-card hidden">
+
+            <h2>Project Repository</h2>
+
+            <p>
+                Explore the full implementation, source code,
+                technical workflow, and documentation.
+            </p>
+
+            <a href="https://github.com/Shreyas993" target="_blank">
+                View on GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SCROLL ANIMATION -->
+
+    <script>
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+
+                else {
+                    entry.target.classList.remove("show");
+                }
+
+            });
+
+        }, {
+            threshold: 0.2
+        });
+
+        const hiddenElements = document.querySelectorAll(".hidden");
+
+        hiddenElements.forEach(el => observer.observe(el));
+
+    </script>
+
 </body>
+
 </html>
