@@ -1717,50 +1717,122 @@ nav a.active::after {
 }
 
 /* ===================================
-   CYBER GRID BACKGROUND
+   FLOATING PARTICLES
 =================================== */
 
-.cyber-grid {
+.floating-particles {
 
     position: fixed;
 
     inset: 0;
 
+    overflow: hidden;
+
     z-index: -2;
 
-    background-image:
-
-        linear-gradient(
-            rgba(56,189,248,0.05) 1px,
-            transparent 1px
-        ),
-
-        linear-gradient(
-            90deg,
-            rgba(56,189,248,0.05) 1px,
-            transparent 1px
-        );
-
-    background-size: 60px 60px;
-
-    mask-image:
-        radial-gradient(circle at center,
-        black 30%,
-        transparent 85%);
-
-    animation: gridMove 18s linear infinite;
+    pointer-events: none;
 }
 
-@keyframes gridMove {
+.floating-particles span {
 
-    from {
+    position: absolute;
 
-        transform: translateY(0px);
+    display: block;
+
+    border-radius: 50%;
+
+    background: rgba(56,189,248,0.12);
+
+    filter: blur(2px);
+
+    animation: floatParticle linear infinite;
+}
+
+/* PARTICLE POSITIONS */
+
+.floating-particles span:nth-child(1) {
+
+    width: 10px;
+    height: 10px;
+
+    left: 10%;
+    top: 20%;
+
+    animation-duration: 14s;
+}
+
+.floating-particles span:nth-child(2) {
+
+    width: 16px;
+    height: 16px;
+
+    left: 75%;
+    top: 30%;
+
+    animation-duration: 18s;
+}
+
+.floating-particles span:nth-child(3) {
+
+    width: 12px;
+    height: 12px;
+
+    left: 50%;
+    top: 70%;
+
+    animation-duration: 16s;
+}
+
+.floating-particles span:nth-child(4) {
+
+    width: 8px;
+    height: 8px;
+
+    left: 85%;
+    top: 80%;
+
+    animation-duration: 13s;
+}
+
+.floating-particles span:nth-child(5) {
+
+    width: 14px;
+    height: 14px;
+
+    left: 20%;
+    top: 85%;
+
+    animation-duration: 20s;
+}
+
+@keyframes floatParticle {
+
+    0% {
+
+        transform:
+            translateY(0px)
+            translateX(0px);
+
+        opacity: 0;
     }
 
-    to {
+    20% {
 
-        transform: translateY(60px);
+        opacity: 1;
+    }
+
+    80% {
+
+        opacity: 1;
+    }
+
+    100% {
+
+        transform:
+            translateY(-120px)
+            translateX(40px);
+
+        opacity: 0;
     }
 }
 
