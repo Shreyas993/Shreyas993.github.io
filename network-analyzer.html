@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO -->
 
     <section class="project-showcase">
 
@@ -39,8 +39,8 @@
             </h1>
 
             <p class="project-description">
-                Advanced real-time packet monitoring and traffic analysis platform
-                designed for protocol classification, anomaly detection,
+                Advanced packet monitoring and traffic analysis system designed
+                for protocol classification, anomaly detection,
                 dashboard visualisation, and structured traffic logging.
             </p>
 
@@ -56,13 +56,13 @@
 
         <div class="project-showcase-image hidden">
 
-            <img src="visuals.png">
+            <img src="visuals.png" alt="Network Analyzer Dashboard">
 
         </div>
 
     </section>
 
-    <!-- PROJECT STATS -->
+    <!-- STATS -->
 
     <section>
 
@@ -98,24 +98,22 @@
                 <h2>Project Overview</h2>
 
                 <p>
-                    This project was developed to monitor and analyse live network
-                    traffic in real-time using packet inspection techniques.
-                    The system captures, classifies, and visualises packets while
-                    identifying abnormal traffic behaviour and generating useful
-                    analytical insights.
+                    This project captures and analyses live network traffic
+                    using packet inspection techniques. The platform identifies
+                    traffic patterns, classifies protocols, and visualises
+                    network behaviour in real-time.
                 </p>
 
                 <p>
-                    The platform integrates both CLI and GUI dashboards to provide
-                    a professional monitoring experience for cybersecurity analysis
-                    and network traffic investigations.
+                    The system integrates both CLI and GUI dashboards to provide
+                    a professional cybersecurity monitoring experience.
                 </p>
 
             </div>
 
             <div class="split-image hidden">
 
-                <img src="summary.png">
+                <img src="summary.png" alt="Traffic Summary">
 
             </div>
 
@@ -132,54 +130,43 @@
         <div class="feature-grid">
 
             <div class="feature-card hidden">
-
                 <h3>Live Packet Capture</h3>
 
                 <p>
-                    Captures and analyses live network packets with configurable
-                    protocol filters and traffic monitoring support.
+                    Captures and analyses live packets with configurable filters.
                 </p>
-
             </div>
 
             <div class="feature-card hidden">
-
                 <h3>Protocol Classification</h3>
 
                 <p>
-                    Detects and classifies TCP, UDP, ICMP, and ARP traffic
-                    for structured network analysis.
+                    Detects TCP, UDP, ICMP, and ARP traffic automatically.
                 </p>
-
             </div>
 
             <div class="feature-card hidden">
-
-                <h3>Real-Time Dashboards</h3>
+                <h3>Real-Time Dashboard</h3>
 
                 <p>
                     Displays packet statistics, traffic distribution,
-                    runtime metrics, and monitoring insights visually.
+                    and runtime analytics visually.
                 </p>
-
             </div>
 
             <div class="feature-card hidden">
-
                 <h3>Anomaly Detection</h3>
 
                 <p>
-                    Detects unusually large packets and suspicious traffic
-                    behaviour during monitoring sessions.
+                    Detects abnormal or oversized packets during monitoring.
                 </p>
-
             </div>
 
         </div>
 
     </section>
 
-    <!-- PROJECT VISUALS -->
+    <!-- VISUALS -->
 
     <section>
 
@@ -189,15 +176,14 @@
 
             <div class="showcase-card hidden">
 
-                <img src="packets.png">
+                <img src="packets.png" alt="Packet Monitoring">
 
                 <div class="showcase-info">
 
                     <h3>Packet Inspection</h3>
 
                     <p>
-                        Live packet monitoring with anomaly detection and
-                        protocol-level traffic analysis.
+                        Real-time packet monitoring and traffic inspection.
                     </p>
 
                 </div>
@@ -206,15 +192,14 @@
 
             <div class="showcase-card hidden">
 
-                <img src="summary.png">
+                <img src="summary.png" alt="Traffic Summary">
 
                 <div class="showcase-info">
 
                     <h3>Traffic Summary</h3>
 
                     <p>
-                        Structured packet statistics and runtime monitoring
-                        dashboard for traffic analysis.
+                        Structured packet statistics and monitoring overview.
                     </p>
 
                 </div>
@@ -223,15 +208,14 @@
 
             <div class="showcase-card hidden">
 
-                <img src="visuals.png">
+                <img src="visuals.png" alt="Visual Analytics">
 
                 <div class="showcase-info">
 
                     <h3>Visual Analytics</h3>
 
                     <p>
-                        Real-time protocol distribution and source IP
-                        visualisation using graphical dashboards.
+                        Protocol distribution and source IP visualisation.
                     </p>
 
                 </div>
@@ -252,7 +236,7 @@
 
             <p>
                 Explore the full implementation, source code,
-                project documentation, and technical workflow.
+                documentation, and technical workflow.
             </p>
 
             <a href="https://github.com/Shreyas993/real-time-network-traffic-analyzer" target="_blank">
@@ -263,17 +247,24 @@
 
     </section>
 
-    <!-- SCROLL ANIMATION -->
+    <!-- SCROLL SCRIPT -->
 
     <script>
+
         const observer = new IntersectionObserver((entries) => {
+
             entries.forEach(entry => {
+
                 if (entry.isIntersecting) {
                     entry.target.classList.add("show");
-                } else {
+                }
+
+                else {
                     entry.target.classList.remove("show");
                 }
+
             });
+
         }, {
             threshold: 0.2
         });
@@ -281,6 +272,7 @@
         const hiddenElements = document.querySelectorAll(".hidden");
 
         hiddenElements.forEach(el => observer.observe(el));
+
     </script>
 
 </body>
