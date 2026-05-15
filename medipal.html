@@ -1,85 +1,282 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>MEDIPAL | Shreyas Ramkumar</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MEDIPAL | Shreyas</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
- <nav>
-    <h3>Shreyas Ramkumar</h3>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#contact">Contact</a>
-    </div>
- </nav>
-<header>
-<h1>MEDIPAL - Secure Healthcare Portal</h1>
-<p>Project Overview</p>
-</header>
 
-<section>
+    <!-- NAVBAR -->
 
-<div class="card hidden">
-<h2>Overview</h2>
-<p>
-Designed and developed the frontend of a healthcare web platform to enable seamless interaction
-between patients and doctors. Focused on usability, structured workflows, and secure interaction design
-for handling sensitive healthcare information.
-</p>
-</div>
+    <nav>
+        <h3>Shreyas</h3>
 
-<div class="card hidden">
-<h2>Key Features</h2>
-<ul>
-<li>User-friendly patient and doctor interfaces</li>
-<li>Appointment scheduling workflows</li>
-<li>Role-based interface design</li>
-<li>Secure and structured interaction flow</li>
-</ul>
-</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
 
-<div class="card hidden">
-<h2>Tools & Technologies</h2>
-<p>HTML, CSS, JavaScript, PHP</p>
-</div>
+    <!-- HERO -->
 
-<div class="card hidden">
-<h2>Output & Visualisation</h2>
+    <section class="project-showcase">
 
-<img src="medipal.png">
+        <div class="project-hero-card hidden">
 
-<video controls>
-<source src="demo.mp4">
-</video>
+            <p class="project-label">
+                HEALTHCARE WEB PLATFORM
+            </p>
 
-</div>
+            <h1>
+                MEDIPAL
+            </h1>
 
-<div class="card hidden">
-<a href="index.html">⬅ Back to Portfolio</a>
-<a href="https://github.com/Shreyas993/Medipal" target="_blank">View on GitHub</a>
-</div>
+            <p class="project-description">
+                Frontend healthcare platform designed to enable seamless
+                patient-doctor interaction through structured workflows,
+                modern UI design, and usability-focused healthcare interfaces.
+            </p>
 
-</section>
-<script>
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        } else {
-            entry.target.classList.remove("show"); // 👈 THIS LINE FIXES IT
-        }
-    });
-}, {
-    threshold: 0.2
-});
+            <div class="project-badges">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+            </div>
 
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach(el => observer.observe(el));
-</script>
+        </div>
+
+        <div class="project-showcase-image hidden">
+
+            <img src="medipal.png" alt="MEDIPAL Platform">
+
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+
+    <section>
+
+        <div class="stats-grid">
+
+            <div class="stat-card hidden">
+                <h2>UI/UX</h2>
+                <p>Healthcare Interface Design</p>
+            </div>
+
+            <div class="stat-card hidden">
+                <h2>Frontend</h2>
+                <p>Web Platform Development</p>
+            </div>
+
+            <div class="stat-card hidden">
+                <h2>Secure</h2>
+                <p>Structured Workflows</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- OVERVIEW -->
+
+    <section>
+
+        <div class="split-layout">
+
+            <div class="split-text hidden">
+
+                <h2>Project Overview</h2>
+
+                <p>
+                    MEDIPAL is a healthcare-focused web platform designed
+                    to improve patient-doctor interaction through a structured
+                    and user-friendly frontend experience.
+                </p>
+
+                <p>
+                    The platform focuses on usability, appointment workflows,
+                    interface accessibility, and organised healthcare navigation
+                    while maintaining a clean and modern UI structure.
+                </p>
+
+            </div>
+
+            <div class="split-image hidden">
+
+                <img src="medipal.png" alt="MEDIPAL Preview">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <section>
+
+        <h2>Core Features</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card hidden">
+
+                <h3>Patient Interface</h3>
+
+                <p>
+                    User-friendly patient dashboard with accessible navigation
+                    and structured workflows.
+                </p>
+
+            </div>
+
+            <div class="feature-card hidden">
+
+                <h3>Doctor Interaction</h3>
+
+                <p>
+                    Designed workflows enabling efficient communication
+                    between patients and healthcare providers.
+                </p>
+
+            </div>
+
+            <div class="feature-card hidden">
+
+                <h3>Appointment Flow</h3>
+
+                <p>
+                    Structured scheduling interface for streamlined
+                    healthcare appointment management.
+                </p>
+
+            </div>
+
+            <div class="feature-card hidden">
+
+                <h3>Responsive UI Design</h3>
+
+                <p>
+                    Modern frontend layout focused on usability,
+                    accessibility, and clean visual hierarchy.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- VISUALS -->
+
+    <section>
+
+        <h2>Project Visuals</h2>
+
+        <div class="showcase-grid">
+
+            <!-- CARD 1 -->
+
+            <div class="showcase-card hidden">
+
+                <div class="showcase-info">
+
+                    <h3>Platform Interface</h3>
+
+                    <p>
+                        Modern healthcare platform interface designed
+                        for intuitive patient interaction and navigation.
+                    </p>
+
+                </div>
+
+                <img src="medipal.png" alt="MEDIPAL Interface">
+
+            </div>
+
+            <!-- CARD 2 -->
+
+            <div class="showcase-card hidden">
+
+                <div class="showcase-info">
+
+                    <h3>Frontend Workflow</h3>
+
+                    <p>
+                        Structured healthcare workflows supporting
+                        appointment management and user interaction.
+                    </p>
+
+                </div>
+
+                <video controls>
+                    <source src="medipal-demo.mp4">
+                </video>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section>
+
+        <div class="cta-card hidden">
+
+            <h2>Project Repository</h2>
+
+            <p>
+                Explore the frontend implementation,
+                interface design, and project structure.
+            </p>
+
+            <a href="https://github.com/Shreyas993" target="_blank">
+                View on GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- SCROLL ANIMATION -->
+
+    <script>
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+
+                else {
+                    entry.target.classList.remove("show");
+                }
+
+            });
+
+        }, {
+            threshold: 0.2
+        });
+
+        const hiddenElements = document.querySelectorAll(".hidden");
+
+        hiddenElements.forEach(el => observer.observe(el));
+
+    </script>
+
 </body>
+
 </html>
