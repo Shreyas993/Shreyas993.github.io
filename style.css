@@ -1621,3 +1621,15 @@ footer {
         brightness(1.08)
         contrast(1.05);
 }
+
+/* ===================================
+   ICON SPACING
+=================================== */
+
+h3 i,
+.contact-buttons i {
+
+    margin-right: 10px;
+
+    color: #38bdf8;
+}
