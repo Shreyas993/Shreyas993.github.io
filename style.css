@@ -1635,11 +1635,13 @@ h3 i {
     vertical-align: middle;
 }
 
+/* CONTACT BUTTON ICONS */
+
 .contact-buttons a i {
 
     margin-right: 10px;
 
-    color: #07111f !important;
+    color: black !important;
 
     vertical-align: middle;
 }
