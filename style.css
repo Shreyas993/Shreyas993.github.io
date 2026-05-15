@@ -1027,3 +1027,28 @@ video {
     }
 
 }
+
+/* ===================================
+   HERO GLASS CONTAINER
+=================================== */
+
+.hero-glass {
+
+    background: rgba(15, 23, 42, 0.62);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(14px);
+
+    padding: 70px 60px;
+
+    border-radius: 36px;
+
+    box-shadow:
+        0 0 40px rgba(56,189,248,0.08),
+        0 10px 50px rgba(0,0,0,0.28);
+
+    max-width: 1050px;
+
+    margin: auto;
+}
