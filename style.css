@@ -1716,4 +1716,52 @@ nav a.active::after {
     border-radius: 10px;
 }
 
+/* ===================================
+   CYBER GRID BACKGROUND
+=================================== */
+
+.cyber-grid {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -2;
+
+    background-image:
+
+        linear-gradient(
+            rgba(56,189,248,0.05) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(56,189,248,0.05) 1px,
+            transparent 1px
+        );
+
+    background-size: 60px 60px;
+
+    mask-image:
+        radial-gradient(circle at center,
+        black 30%,
+        transparent 85%);
+
+    animation: gridMove 18s linear infinite;
+}
+
+@keyframes gridMove {
+
+    from {
+
+        transform: translateY(0px);
+    }
+
+    to {
+
+        transform: translateY(60px);
+    }
+}
+
 /* END */
