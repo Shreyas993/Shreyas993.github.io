@@ -1,121 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Network Traffic Analyzer | Shreyas Ramkumar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Traffic Analyzer | Shreyas</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
- <nav>
-    <h3>Shreyas Ramkumar</h3>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="index.html#contact">Contact</a>
-    </div>
-</nav>
-<header class="project-hero">
 
-    <div class="project-hero-content">
+    <!-- NAVBAR -->
 
-        <p class="project-category">
-            NETWORK SECURITY PROJECT
-        </p>
+    <nav>
+        <h3>Shreyas</h3>
 
-        <h1>
-            Real-Time Network Traffic Analyzer
-        </h1>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
 
-        <p class="project-subtitle">
-            Advanced packet monitoring and traffic analysis system with real-time
-            dashboards, protocol classification, anomaly detection, and visualisation.
-        </p>
+    <!-- HERO -->
 
-        <div class="project-tech-stack">
-            <span>Python</span>
-            <span>Scapy</span>
-            <span>Matplotlib</span>
-            <span>Tkinter</span>
-            <span>Wireshark</span>
+    <section class="project-showcase">
+
+        <div class="project-showcase-text hidden">
+
+            <p class="project-label">
+                NETWORK SECURITY PROJECT
+            </p>
+
+            <h1>
+                Real-Time Network Traffic Analyzer
+            </h1>
+
+            <p class="project-description">
+                Advanced real-time packet monitoring and traffic analysis platform designed
+                for protocol classification, anomaly detection, dashboard visualisation,
+                and structured traffic logging.
+            </p>
+
+            <div class="project-badges">
+                <span>Python</span>
+                <span>Scapy</span>
+                <span>Matplotlib</span>
+                <span>Tkinter</span>
+                <span>Wireshark</span>
+            </div>
+
         </div>
 
-    </div>
+        <div class="project-showcase-image hidden">
 
-</header>
+            <img src="visuals.png">
 
-<section>
+        </div>
 
-<div class="card hidden">
-    <h2>Overview</h2>
-    <p>
-        This project is a real-time network monitoring tool designed to capture, analyse, and visualise live packet-level traffic.
-        It focuses on identifying abnormal patterns and providing insights into network behaviour.
-    </p>
-</div>
+    </section>
 
-<div class="card hidden">
-    <h2>Key Features</h2>
-    <ul>
-        <li>Live packet capture with protocol filtering</li>
-        <li>Protocol classification (TCP, UDP, ICMP, ARP)</li>
-        <li>Real-time CLI dashboard with alerts</li>
-        <li>GUI dashboard with visual charts</li>
-        <li>CSV logging and traffic analysis</li>
-    </ul>
-</div>
+    <!-- STATS -->
 
-<div class="card hidden">
-    <h2>Tools & Technologies</h2>
-    <p>Python, Scapy, Matplotlib, Tkinter, Colorama</p>
-</div>
+    <section>
 
-<div class="card hidden">
+        <div class="stats-grid">
 
-    <h2>Project Visuals</h2>
+            <div class="stat-card hidden">
+                <h2>4+</h2>
+                <p>Protocols Analysed</p>
+            </div>
 
-    <div class="visual-grid">
+            <div class="stat-card hidden">
+                <h2>Real-Time</h2>
+                <p>Traffic Monitoring</p>
+            </div>
 
-        <img src="packets.png">
+            <div class="stat-card hidden">
+                <h2>CSV</h2>
+                <p>Structured Logging</p>
+            </div>
 
-        <img src="summary.png">
+        </div>
 
-        <img src="visuals.png">
+    </section>
 
-    </div>
+    <!-- OVERVIEW -->
 
-</div>
+    <section>
 
-<div class="project-links hidden">
+        <div class="split-layout">
 
-    <a href="index.html">
-        ← Back to Portfolio
-    </a>
+            <div class="split-text hidden">
 
-    <a href="https://github.com/Shreyas993/real-time-network-traffic-analyzer" target="_blank">
-        View on GitHub
-    </a>
+                <h2>Project Overview</h2>
 
-</div>
+                <p>
+                    This project was developed to monitor and analyse live network traffic
+                    in real-time using packet inspection techniques. The system captures,
+                    classifies, and visualises packets while identifying abnormal traffic
+                    behaviour and generating useful analytical insights.
+                </p>
 
-</section>
-<script>
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        } else {
-            entry.target.classList.remove("show"); // 👈 THIS LINE FIXES IT
-        }
-    });
-}, {
-    threshold: 0.2
-});
+                <p>
+                    The tool integrates both CLI and GUI dashboards to provide a
+                    professional monitoring experience for network analysis and
+                    cybersecurity-focused investigations.
+                </p>
 
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach(el => observer.observe(el));
-</script>
+            </div>
+
+            <div class="split-image hidden">
+
+                <img src="summary.png">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <section>
+
+        <h2>Core Features</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card hidden">
+                <h3>Live Packet Capture</h3>
+                <p>
+                    Captures live network packets with configurable protocol filters.
+                </p>
+            </div>
+
+            <div class="feature-card hidden">
+                <h3>Protocol Classification</h3>
+                <p>
+                    Analyses and classifies TCP, UDP, ICMP, and ARP traffic.
+                </p>
+            </div>
+
+            <div class="feature-card hidden">
+                <h3>Real-Time Dashboards</h3>
+                <p>
+                    Displays packet statistics, alerts, and traffic distribution visually.
+                </p>
+            </div>
+
+            <div class="feature-card hidden">
+                <h3>Anomaly Detection</h3>
+                <p>
+                    Detects unusually large packets and suspicious traffic behaviour.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALLERY -->
+
+    <section>
+
+        <h2>Project Visuals</h2>
+
+        <div class="gallery-grid">
+
+            <img class="hidden" src="packets.png">
+
+            <img class="hidden" src="summary.png">
+
+            <img class="hidden" src="visuals.png">
+
+        </div>
+
+    </section>
+
+    <!-- CTA -->
+
+    <section>
+
+        <div class="cta-card hidden">
+
+            <h2>Project Repository</h2>
+
+            <p>
+                Explore the full implementation, documentation, and source code.
+            </p>
+
+            <a href="https://github.com/Shreyas993/real-time-network-traffic-analyzer" target="_blank">
+                View on GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ANIMATION SCRIPT -->
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        const hiddenElements = document.querySelectorAll(".hidden");
+
+        hiddenElements.forEach(el => observer.observe(el));
+    </script>
+
 </body>
+
 </html>
