@@ -1635,11 +1635,11 @@ h3 i {
     vertical-align: middle;
 }
 
-.contact-buttons i {
+.contact-buttons a i {
 
     margin-right: 10px;
 
-    color: #07111f;
+    color: #07111f !important;
 
     vertical-align: middle;
 }
