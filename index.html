@@ -1,267 +1,423 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Shreyas | Cybersecurity Portfolio</title>
-     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
- <div class="background-glow">
 
-    <div class="glow glow1"></div>
+    <!-- BACKGROUND GLOW -->
 
-    <div class="glow glow2"></div>
+    <div class="background-glow">
 
-    <div class="glow glow3"></div>
+        <div class="glow glow1"></div>
 
-</div>
- <nav>
-    <h3>Shreyas Ramkumar</h3>
-    <div>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+        <div class="glow glow2"></div>
+
+        <div class="glow glow3"></div>
+
     </div>
-</nav>
-<header class="hero">
 
-    <div class="hero-left hidden">
+    <!-- NAVBAR -->
 
-        <p class="hero-tag">
-            CYBERSECURITY PORTFOLIO
-        </p>
+    <nav>
 
-        <h1>
-            Shreyas Ramkumar
-        </h1>
+        <h3>Shreyas</h3>
 
-        <h2>
+        <div>
 
-            <span id="typing-text"></span>
-
-        </h2>
-
-        <p class="hero-description">
-            Cybersecurity postgraduate student focused on
-            Security Operations, network traffic analysis,
-            threat detection, and incident response.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#projects">
-                View Projects
-            </a>
-
-            <a href="#contact">
-                Contact Me
-            </a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
 
         </div>
 
-    </div>
+    </nav>
 
-</header>
+    <!-- HERO -->
 
-<section>
-    <h2 id="about">About Me</h2>
-<div class="card hidden">
-    <p>
-        Cybersecurity postgraduate student at RMIT University with hands-on experience in network traffic analysis,
-        threat detection, and security operations. Skilled in tools such as Wireshark, Nmap, and Python for analysing
-        and monitoring network activity.
-    </p>
-    <p>
-        Passionate about Security Operations (SOC), incident response, and identifying suspicious patterns in network environments.
-        Actively seeking opportunities to apply and grow practical cybersecurity skills.
-    </p>
-</div>
+    <header class="hero">
 
-<h2 id="projects">Projects</h2>
+        <div class="hero-left hidden">
 
-<div class="project-grid">
-
-    <div class="project-card hidden">
-        <div class="project-content">
-            <p class="project-type">NETWORK SECURITY</p>
-
-            <h3>Real-Time Network Traffic Analyzer</h3>
-
-            <p>
-                Advanced packet monitoring and analysis tool with protocol classification,
-                anomaly detection, dashboards, and traffic visualisation.
+            <p class="hero-tag">
+                CYBERSECURITY PORTFOLIO
             </p>
 
-            <div class="project-tags">
-                <span>Python</span>
-                <span>Scapy</span>
-                <span>Wireshark</span>
-            </div>
+            <h1>
+                Shreyas Ramkumar
+            </h1>
 
-            <a href="network-analyzer.html">View Project →</a>
-        </div>
-    </div>
+            <h2>
 
-    <div class="project-card hidden">
-        <div class="project-content">
-            <p class="project-type">DATA SECURITY</p>
+                <span id="typing-text"></span>
 
-            <h3>Secure File Encryption Tool</h3>
+            </h2>
 
-            <p>
-                File encryption system implementing AES-128 encryption,
-                SHA-256 integrity verification, and forensic logging.
+            <p class="hero-description">
+                Cybersecurity postgraduate student focused on
+                Security Operations, network traffic analysis,
+                threat detection, and incident response.
             </p>
 
-            <div class="project-tags">
-                <span>Python</span>
-                <span>Fernet</span>
-                <span>SHA-256</span>
+            <div class="hero-buttons">
+
+                <a href="#projects">
+                    View Projects
+                </a>
+
+                <a href="#contact">
+                    Contact Me
+                </a>
+
             </div>
 
-            <a href="encryption-tool.html">View Project →</a>
         </div>
-    </div>
 
-    <div class="project-card hidden">
-        <div class="project-content">
-            <p class="project-type">WEB SECURITY</p>
+    </header>
 
-            <h3>MEDIPAL Healthcare Platform</h3>
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="section-title hidden">
+
+            <p>ABOUT ME</p>
+
+            <h2>
+                Passionate About Modern Cybersecurity
+            </h2>
+
+        </div>
+
+        <div class="about-card hidden">
 
             <p>
-                Frontend healthcare platform enabling secure patient-doctor interaction
-                with structured workflows and usability-focused design.
+                I am a postgraduate Cybersecurity student at RMIT University
+                with strong interest in Security Operations, Threat Detection,
+                Network Security, and Incident Response.
             </p>
 
-            <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
+            <p>
+                I enjoy building practical cybersecurity projects involving
+                traffic analysis, secure systems, monitoring platforms,
+                and security-focused application development.
+            </p>
+
+            <p>
+                My goal is to grow into a SOC Analyst role while continuously
+                strengthening hands-on cybersecurity skills through practical
+                learning and real-world projects.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <div class="section-title hidden">
+
+            <p>PROJECTS</p>
+
+            <h2>
+                Featured Cybersecurity Projects
+            </h2>
+
+        </div>
+
+        <div class="project-grid">
+
+            <!-- PROJECT 1 -->
+
+            <div class="project-card hidden">
+
+                <img src="visuals.png" alt="Network Analyzer">
+
+                <div class="project-info">
+
+                    <h3>
+                        Real-Time Network Traffic Analyzer
+                    </h3>
+
+                    <p>
+                        Advanced packet monitoring platform implementing
+                        live traffic analysis, protocol classification,
+                        anomaly detection, and visual dashboards.
+                    </p>
+
+                    <a href="network-analyzer.html">
+                        View Project →
+                    </a>
+
+                </div>
+
             </div>
 
-            <a href="medipal.html">View Project →</a>
+            <!-- PROJECT 2 -->
+
+            <div class="project-card hidden">
+
+                <img src="encrypt.png" alt="Encryption Tool">
+
+                <div class="project-info">
+
+                    <h3>
+                        Secure File Encryption Tool
+                    </h3>
+
+                    <p>
+                        AES-128 based file encryption platform with
+                        SHA-256 integrity verification and forensic logging.
+                    </p>
+
+                    <a href="encryption-tool.html">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- PROJECT 3 -->
+
+            <div class="project-card hidden">
+
+                <img src="back.jpg" alt="MEDIPAL">
+
+                <div class="project-info">
+
+                    <h3>
+                        MEDIPAL Healthcare Platform
+                    </h3>
+
+                    <p>
+                        Frontend healthcare platform focused on patient-doctor
+                        interaction, appointment workflows, and usability-focused
+                        healthcare interfaces.
+                    </p>
+
+                    <a href="medipal.html">
+                        View Project →
+                    </a>
+
+                </div>
+
+            </div>
+
         </div>
-    </div>
 
-</div>
+    </section>
 
-    <h2 id="skills">Skills</h2>
+    <!-- SKILLS -->
 
-<div class="card hidden">
-    <p><strong>Security Tools:</strong> Wireshark, Nmap, Kali Linux</p>
-    <p><strong>Programming:</strong> Python, C</p>
-    <p><strong>Concepts:</strong> Network Traffic Analysis, Threat Detection, Incident Analysis, Vulnerability Assessment, OWASP Top 10, SIEM Fundamentals</p>
-    <p><strong>Networking:</strong> TCP/IP, Packet Analysis, Network Security Fundamentals</p>
-</div>
+    <section id="skills">
 
-    <h2 id="experience">Experience</h2>
+        <div class="section-title hidden">
 
-<div class="card hidden">
-    <h3>Cyber Security Intern</h3>
-    <p><strong>ES Ethic Secur SofTec Pvt Ltd | Aug 2024 – Sept 2024</strong></p>
+            <p>SKILLS</p>
 
-    <ul>
-        <li>Performed network traffic analysis using Wireshark to identify suspicious patterns and anomalies</li>
-        <li>Assisted in vulnerability assessment and basic threat identification</li>
-        <li>Applied OWASP Top 10 principles to analyse web application security risks</li>
-        <li>Supported security operations by documenting incidents and recommending mitigation steps</li>
-    </ul>
-</div>
+            <h2>
+                Technical Skills & Tools
+            </h2>
 
-    <h2 id="contact">Contact</h2>
-<div class="card hidden">
-    <p><strong>Email:</strong> 
-        <a href="mailto:shreyasram0308@gmail.com">shreyasram0308@gmail.com</a>
-    </p>
-    <p><strong>GitHub:</strong> 
-        <a href="https://github.com/Shreyas993" target="_blank">github.com/Shreyas993</a>
-    </p>
-    <p><strong>LinkedIn:</strong> 
-        <a href="https://linkedin.com/in/shreyas-ramkumar-0a2529267" target="_blank">
-            linkedin.com/in/shreyas-ramkumar-0a2529267
-        </a>
-    </p>
-    <p><strong>Portfolio:</strong> 
-        <a href="https://shreyas993.github.io" target="_blank">
-            shreyas993.github.io
-        </a>
-    </p>
-</div>
+        </div>
 
-</section>
-<script>
-const texts = [
-    "Aspiring SOC Analyst",
-    "Network Traffic Analysis",
-    "Threat Detection & Incident Response"
-];
+        <div class="skills-grid">
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
+            <div class="skill-card hidden">Wireshark</div>
+            <div class="skill-card hidden">Python</div>
+            <div class="skill-card hidden">Kali Linux</div>
+            <div class="skill-card hidden">Scapy</div>
+            <div class="skill-card hidden">Nmap</div>
+            <div class="skill-card hidden">TCP/IP</div>
+            <div class="skill-card hidden">Threat Detection</div>
+            <div class="skill-card hidden">SIEM Fundamentals</div>
+            <div class="skill-card hidden">Incident Response</div>
+            <div class="skill-card hidden">OWASP Top 10</div>
 
-(function type() {
-    if (count === texts.length) {
-        count = 0;
-    }
+        </div>
 
-    currentText = texts[count];
-    letter = currentText.slice(0, ++index);
+    </section>
 
-    document.getElementById("typing").textContent = letter;
+    <!-- EXPERIENCE -->
 
-    if (letter.length === currentText.length) {
-        setTimeout(() => {
-            index = 0;
-            count++;
-            type();
-        }, 1500);
-    } else {
-        setTimeout(type, 60);
-    }
-})();
-</script>
-<script>
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-        } else {
-            entry.target.classList.remove("show"); // 👈 THIS LINE FIXES IT
+    <section id="experience">
+
+        <div class="section-title hidden">
+
+            <p>EXPERIENCE</p>
+
+            <h2>
+                Internship Experience
+            </h2>
+
+        </div>
+
+        <div class="experience-card hidden">
+
+            <h3>
+                Cyber Security Intern
+            </h3>
+
+            <h4>
+                ES Ethic Secur SofTec Pvt Ltd
+            </h4>
+
+            <p>
+                Assisted with network traffic analysis, vulnerability
+                assessment, threat identification, and cybersecurity
+                documentation using industry-standard tools and workflows.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="contact-card hidden">
+
+            <p>CONTACT</p>
+
+            <h2>
+                Let’s Connect
+            </h2>
+
+            <p>
+                Open to cybersecurity internships,
+                SOC opportunities, and collaborative projects.
+            </p>
+
+            <div class="contact-buttons">
+
+                <a href="mailto:shreyasram0308@gmail.com">
+                    Email Me
+                </a>
+
+                <a href="https://github.com/Shreyas993" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://linkedin.com/in/shreyas-ramkumar-0a2529267" target="_blank">
+                    LinkedIn
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SCROLL ANIMATION -->
+
+    <script>
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+
+                else {
+                    entry.target.classList.remove("show");
+                }
+
+            });
+
+        }, {
+            threshold: 0.15
+        });
+
+        const hiddenElements = document.querySelectorAll(".hidden");
+
+        hiddenElements.forEach(el => observer.observe(el));
+
+    </script>
+
+    <!-- TYPING EFFECT -->
+
+    <script>
+
+        const roles = [
+
+            "Aspiring SOC Analyst",
+            "Threat Detection Enthusiast",
+            "Network Security Learner",
+            "Cybersecurity Postgraduate"
+
+        ];
+
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        const typingElement = document.getElementById("typing-text");
+
+        function typeEffect() {
+
+            const currentRole = roles[roleIndex];
+
+            if (!isDeleting) {
+
+                typingElement.textContent =
+                    currentRole.substring(0, charIndex + 1);
+
+                charIndex++;
+
+                if (charIndex === currentRole.length) {
+
+                    isDeleting = true;
+
+                    setTimeout(typeEffect, 1400);
+
+                    return;
+                }
+
+            }
+
+            else {
+
+                typingElement.textContent =
+                    currentRole.substring(0, charIndex - 1);
+
+                charIndex--;
+
+                if (charIndex === 0) {
+
+                    isDeleting = false;
+
+                    roleIndex =
+                        (roleIndex + 1) % roles.length;
+                }
+
+            }
+
+            setTimeout(typeEffect, isDeleting ? 45 : 90);
         }
-    });
-}, {
-    threshold: 0.2
-});
 
-const hiddenElements = document.querySelectorAll(".hidden");
-hiddenElements.forEach(el => observer.observe(el));
-</script>
-<script>
-const sections = document.querySelectorAll("section div[id], h2[id]");
-const navLinks = document.querySelectorAll("nav a");
+        typeEffect();
 
-window.addEventListener("scroll", () => {
-    let current = "";
+    </script>
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 120) {
-            current = section.getAttribute("id");
-        }
-    });
-
-    navLinks.forEach(a => {
-        a.classList.remove("active");
-        if (a.getAttribute("href") === "#" + current) {
-            a.classList.add("active");
-        }
-    });
-});
-</script>    
 </body>
+
 </html>
+```
