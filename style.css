@@ -1588,3 +1588,25 @@ footer {
 
     font-size: 0.95rem;
 }
+
+/* ===================================
+   PREMIUM IMAGE HOVER EFFECTS
+=================================== */
+
+.project-showcase-image img,
+.featured-project img,
+.showcase-card img {
+
+    transition:
+        transform 0.45s ease,
+        filter 0.45s ease;
+}
+
+.project-showcase-image:hover img,
+.featured-project:hover img,
+.showcase-card:hover img {
+
+    transform: scale(1.03);
+
+    filter: brightness(1.05);
+}
