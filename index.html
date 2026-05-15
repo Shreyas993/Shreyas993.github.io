@@ -531,129 +531,135 @@
 
     <script>
 
-        const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries) => {
 
-            entries.forEach(entry => {
+        entries.forEach((entry) => {
 
-                if (entry.isIntersecting) {
+            if (entry.isIntersecting) {
 
-                    entry.target.classList.add("show");
-                }
+                entry.target.classList.add("show");
 
-                else {
+            } else {
 
-                    entry.target.classList.remove("show");
-                }
+                entry.target.classList.remove("show");
 
-            });
+            }
 
-        }, {
-            threshold: 0.15
         });
 
-        const hiddenElements = document.querySelectorAll(".hidden");
+    }, {
+        threshold: 0.15
+    });
 
-        hiddenElements.forEach(el => observer.observe(el));
+    const hiddenElements = document.querySelectorAll(".hidden");
 
-    </script>
+    hiddenElements.forEach((el) => observer.observe(el));
 
-    <!-- TYPING EFFECT -->
+</script>
 
-    <script>
+<!-- TYPING EFFECT -->
 
-        const roles = [
+<script>
 
-            "Aspiring SOC Analyst",
-            "Threat Detection Enthusiast",
-            "Network Security Learner",
-            "Cybersecurity Postgraduate"
+    const roles = [
 
-        ];
+        "Aspiring SOC Analyst",
+        "Threat Detection Enthusiast",
+        "Network Security Learner",
+        "Cybersecurity Postgraduate"
 
-        let roleIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
+    ];
 
-        const typingElement = document.getElementById("typing-text");
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
 
-        function typeEffect() {
+    const typingElement = document.getElementById("typing-text");
 
-            const currentRole = roles[roleIndex];
+    function typeEffect() {
 
-            if (!isDeleting) {
+        const currentRole = roles[roleIndex];
 
-                typingElement.textContent =
-                    currentRole.substring(0, charIndex + 1);
+        if (!isDeleting) {
 
-                charIndex++;
+            typingElement.textContent =
+                currentRole.substring(0, charIndex + 1);
 
-                if (charIndex === currentRole.length) {
+            charIndex++;
 
-                    isDeleting = true;
+            if (charIndex === currentRole.length) {
 
-                    setTimeout(typeEffect, 1400);
+                isDeleting = true;
 
-                    return;
-                }
+                setTimeout(typeEffect, 1400);
+
+                return;
 
             }
 
-            else {
+        } else {
 
-                typingElement.textContent =
-                    currentRole.substring(0, charIndex - 1);
+            typingElement.textContent =
+                currentRole.substring(0, charIndex - 1);
 
-                charIndex--;
+            charIndex--;
 
-                if (charIndex === 0) {
+            if (charIndex === 0) {
 
-                    isDeleting = false;
+                isDeleting = false;
 
-                    roleIndex =
-                        (roleIndex + 1) % roles.length;
-                }
+                roleIndex =
+                    (roleIndex + 1) % roles.length;
 
             }
 
-            setTimeout(typeEffect, isDeleting ? 45 : 90);
         }
 
-        typeEffect();
+        setTimeout(typeEffect, isDeleting ? 45 : 90);
 
-    </script>
-    <script>
+    }
 
-const sections = document.querySelectorAll("section");
+    typeEffect();
 
-const navLinks = document.querySelectorAll("nav a");
+</script>
 
-window.addEventListener("scroll", () => {
+<!-- ACTIVE NAVBAR -->
 
-    let current = "";
+<script>
 
-    sections.forEach(section => {
+    const sections = document.querySelectorAll("section");
 
-        const sectionTop = section.offsetTop;
+    const navLinks = document.querySelectorAll("nav a");
 
-        if (scrollY >= sectionTop - 200) {
+    window.addEventListener("scroll", () => {
 
-            current = section.getAttribute("id");
-        }
+        let current = "";
+
+        sections.forEach((section) => {
+
+            const sectionTop = section.offsetTop;
+
+            if (scrollY >= sectionTop - 200) {
+
+                current = section.getAttribute("id");
+
+            }
+
+        });
+
+        navLinks.forEach((link) => {
+
+            link.classList.remove("active");
+
+            if (link.getAttribute("href") === `#${current}`) {
+
+                link.classList.add("active");
+
+            }
+
+        });
 
     });
-
-    navLinks.forEach(link => {
-
-        link.classList.remove("active");
-
-        if (link.getAttribute("href") === `#${current}`) {
-
-            link.classList.add("active");
-        }
-
-    });
-
-});
 
 </script>
 
