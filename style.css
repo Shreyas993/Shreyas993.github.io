@@ -1,6 +1,6 @@
-/* =========================
+/* ===================================
    RESET
-========================= */
+=================================== */
 
 * {
     margin: 0;
@@ -8,9 +8,9 @@
     box-sizing: border-box;
 }
 
-/* =========================
+/* ===================================
    GLOBAL
-========================= */
+=================================== */
 
 html {
     scroll-behavior: smooth;
@@ -23,9 +23,9 @@ body {
     overflow-x: hidden;
 }
 
-/* =========================
+/* ===================================
    NAVBAR
-========================= */
+=================================== */
 
 nav {
     position: sticky;
@@ -79,9 +79,9 @@ nav a.active::after {
     background: #38bdf8;
 }
 
-/* =========================
+/* ===================================
    HERO SECTION
-========================= */
+=================================== */
 
 .hero {
     min-height: 92vh;
@@ -90,6 +90,7 @@ nav a.active::after {
     align-items: center;
     text-align: center;
     padding: 40px 20px;
+
     background:
         radial-gradient(circle at top left, rgba(56,189,248,0.15), transparent 25%),
         radial-gradient(circle at bottom right, rgba(14,165,233,0.15), transparent 25%),
@@ -135,9 +136,9 @@ nav a.active::after {
     margin: 10px;
 }
 
-/* =========================
+/* ===================================
    SECTION
-========================= */
+=================================== */
 
 section {
     max-width: 1150px;
@@ -165,9 +166,9 @@ h2::after {
     border-radius: 10px;
 }
 
-/* =========================
+/* ===================================
    GENERAL CARD
-========================= */
+=================================== */
 
 .card {
     background: rgba(30, 41, 59, 0.72);
@@ -186,9 +187,9 @@ h2::after {
     box-shadow: 0 0 30px rgba(56,189,248,0.12);
 }
 
-/* =========================
+/* ===================================
    PROJECT GRID
-========================= */
+=================================== */
 
 .project-grid {
     display: grid;
@@ -251,9 +252,9 @@ h2::after {
     font-size: 0.8rem;
 }
 
-/* =========================
+/* ===================================
    TEXT
-========================= */
+=================================== */
 
 p {
     line-height: 1.7;
@@ -270,9 +271,9 @@ li {
     color: #cbd5e1;
 }
 
-/* =========================
+/* ===================================
    BUTTONS
-========================= */
+=================================== */
 
 a {
     display: inline-block;
@@ -291,9 +292,9 @@ a:hover {
     box-shadow: 0 0 18px rgba(56,189,248,0.35);
 }
 
-/* =========================
+/* ===================================
    MEDIA
-========================= */
+=================================== */
 
 img,
 video {
@@ -303,9 +304,9 @@ video {
     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 }
 
-/* =========================
+/* ===================================
    TYPING CURSOR
-========================= */
+=================================== */
 
 #typing::after {
     content: "|";
@@ -322,9 +323,9 @@ video {
     }
 }
 
-/* =========================
+/* ===================================
    SCROLL ANIMATION
-========================= */
+=================================== */
 
 .hidden {
     opacity: 0;
@@ -337,11 +338,207 @@ video {
     transform: translateY(0);
 }
 
-/* =========================
-   MOBILE
-========================= */
+/* ===================================
+   PROJECT SHOWCASE HERO
+=================================== */
 
-@media (max-width: 768px) {
+.project-showcase {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 20px;
+}
+
+.project-showcase-text h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.project-label {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+.project-showcase-image img {
+    border-radius: 22px;
+    box-shadow: 0 0 40px rgba(56,189,248,0.18);
+}
+
+/* ===================================
+   BADGES
+=================================== */
+
+.project-badges span {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 8px 8px 0 0;
+    border-radius: 30px;
+    background: rgba(56,189,248,0.12);
+    color: #38bdf8;
+    border: 1px solid rgba(56,189,248,0.18);
+    font-size: 0.9rem;
+}
+
+/* ===================================
+   STATS
+=================================== */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.stat-card {
+    background: rgba(30, 41, 59, 0.72);
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(14px);
+    transition: 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(56,189,248,0.25);
+    box-shadow: 0 0 30px rgba(56,189,248,0.12);
+}
+
+.stat-card h2 {
+    font-size: 2.2rem;
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.stat-card p {
+    color: #94a3b8;
+}
+
+/* ===================================
+   SPLIT LAYOUT
+=================================== */
+
+.split-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.split-text p {
+    margin-top: 20px;
+    line-height: 1.9;
+}
+
+.split-image img {
+    border-radius: 20px;
+}
+
+/* ===================================
+   FEATURES
+=================================== */
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background: rgba(30, 41, 59, 0.72);
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 28px;
+    border-radius: 18px;
+    transition: 0.3s ease;
+    backdrop-filter: blur(14px);
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(56,189,248,0.25);
+    box-shadow: 0 0 30px rgba(56,189,248,0.12);
+}
+
+.feature-card h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #94a3b8;
+    line-height: 1.7;
+}
+
+/* ===================================
+   GALLERY
+=================================== */
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.015);
+}
+
+/* ===================================
+   CTA
+=================================== */
+
+.cta-card {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(56,189,248,0.12),
+            rgba(14,165,233,0.05)
+        );
+
+    border: 1px solid rgba(56,189,248,0.18);
+
+    padding: 50px;
+    border-radius: 24px;
+    text-align: center;
+}
+
+.cta-card h2 {
+    margin-bottom: 20px;
+}
+
+.cta-card p {
+    max-width: 700px;
+    margin: auto;
+    color: #94a3b8;
+    line-height: 1.8;
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media (max-width: 900px) {
 
     nav {
         flex-direction: column;
@@ -373,117 +570,17 @@ video {
     section {
         padding: 60px 20px;
     }
-}
 
-/* =========================
-   PROJECT HERO
-========================= */
-
-.project-hero {
-    min-height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 60px 20px;
-
-    background:
-        radial-gradient(circle at top left, rgba(56,189,248,0.15), transparent 25%),
-        radial-gradient(circle at bottom right, rgba(14,165,233,0.12), transparent 25%),
-        #0f172a;
-}
-
-.project-hero-content {
-    max-width: 900px;
-}
-
-.project-category {
-    color: #38bdf8;
-    letter-spacing: 3px;
-    font-size: 0.85rem;
-    margin-bottom: 20px;
-}
-
-.project-hero h1 {
-    font-size: 3.8rem;
-    color: white;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.project-subtitle {
-    color: #94a3b8;
-    font-size: 1.15rem;
-    line-height: 1.9;
-    max-width: 800px;
-    margin: auto;
-}
-
-/* =========================
-   TECH STACK BADGES
-========================= */
-
-.project-tech-stack {
-    margin-top: 35px;
-}
-
-.project-tech-stack span {
-    display: inline-block;
-    margin: 8px;
-    padding: 10px 18px;
-    border-radius: 30px;
-    background: rgba(56,189,248,0.12);
-    color: #38bdf8;
-    font-size: 0.9rem;
-}
-
-/* =========================
-   VISUAL GRID
-========================= */
-
-.visual-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 25px;
-    margin-top: 25px;
-}
-
-.visual-grid img {
-    transition: 0.3s ease;
-}
-
-.visual-grid img:hover {
-    transform: scale(1.01);
-}
-
-/* =========================
-   PROJECT LINKS
-========================= */
-
-.project-links {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.project-links a {
-    margin: 12px;
-}
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    .project-hero h1 {
-        font-size: 2.5rem;
+    .project-showcase {
+        grid-template-columns: 1fr;
+        text-align: center;
     }
 
-    .project-subtitle {
-        font-size: 1rem;
+    .project-showcase-text h1 {
+        font-size: 2.8rem;
     }
 
+    .split-layout {
+        grid-template-columns: 1fr;
+    }
 }
-
-
-
