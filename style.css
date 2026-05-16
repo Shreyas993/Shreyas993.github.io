@@ -1772,5 +1772,93 @@ nav a.active::after {
     }
 }
 
+/* ===================================
+   CERTIFICATIONS
+=================================== */
+
+.certifications-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 28px;
+}
+
+.cert-card {
+
+    background: rgba(15, 23, 42, 0.72);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    border-radius: 30px;
+
+    padding: 38px;
+
+    backdrop-filter: blur(14px);
+
+    transition: 0.35s ease;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,0.22);
+
+    text-align: center;
+}
+
+.cert-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(56,189,248,0.18);
+
+    box-shadow:
+        0 0 28px rgba(56,189,248,0.08);
+}
+
+.cert-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 20px;
+
+    background: rgba(56,189,248,0.12);
+
+    border: 1px solid rgba(56,189,248,0.18);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 0 auto 24px;
+}
+
+.cert-icon i {
+
+    color: #38bdf8;
+
+    font-size: 1.7rem;
+}
+
+.cert-card h3 {
+
+    color: white;
+
+    font-size: 1.2rem;
+
+    line-height: 1.5;
+
+    margin-bottom: 14px;
+}
+
+.cert-card h4 {
+
+    color: #38bdf8;
+
+    font-weight: 500;
+}
 
 /* END */
