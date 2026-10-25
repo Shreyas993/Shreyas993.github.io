@@ -369,6 +369,110 @@
 
     </section>
 
+    
+    <!-- PERSONAL CONTRIBUTIONS -->
+    <section>
+
+        <h2>My Contributions</h2>
+
+        <p>
+            Alongside coordinating the security workstream, I
+            contributed directly to selected security tests,
+            finding verification, and project-wide risk management.
+        </p>
+
+        <div class="feature-grid">
+
+            <div class="feature-card hidden">
+                <h3>Payment Workflow Testing</h3>
+                <p>
+                    Worked on establishing the payment-flow baseline
+                    and examining security controls around payment
+                    and order operations, including server-side
+                    authorisation checks using Burp Suite.
+                </p>
+            </div>
+
+            <div class="feature-card hidden">
+                <h3>Access Control Assessment</h3>
+                <p>
+                    Personally tested access-control behaviour and
+                    privilege-related scenarios to assess whether
+                    sensitive actions were properly restricted.
+                </p>
+            </div>
+
+            <div class="feature-card hidden">
+                <h3>File Upload Retesting</h3>
+                <p>
+                    Contributed to testing and final retesting of
+                    a file path-traversal issue, helping verify
+                    the reported remediation.
+                </p>
+            </div>
+
+            <div class="feature-card hidden">
+                <h3>Risk &amp; Finding Management</h3>
+                <p>
+                    Maintained the project risk register, raised
+                    findings as GitHub issues, monitored remediation,
+                    and contributed to the final security report
+                    and remediation roadmap.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TECHNICAL LESSONS -->
+    <section>
+
+        <h2>Technical Lessons Learned</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card hidden">
+                <h3>Trust Server-Side Controls</h3>
+                <p>
+                    Security-sensitive operations must be validated
+                    on the server rather than relying on client-side
+                    state or submitted request values.
+                </p>
+            </div>
+
+            <div class="feature-card hidden">
+                <h3>Verify Payment State</h3>
+                <p>
+                    Payment and order workflows need reliable
+                    server-side verification so that an order
+                    cannot be treated as paid without a valid
+                    payment confirmation.
+                </p>
+            </div>
+
+            <div class="feature-card hidden">
+                <h3>Consider Data Privacy</h3>
+                <p>
+                    File security extends beyond upload validation.
+                    Metadata and storage permissions can also
+                    create privacy and information-exposure risks.
+                </p>
+            </div>
+
+            <div class="feature-card hidden">
+                <h3>Retest After Remediation</h3>
+                <p>
+                    A reported fix should be verified against the
+                    original issue. Tracking remediation and
+                    recording retest results help establish
+                    the final status of findings.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
 
 
     <!-- SCROLL ANIMATION -->
