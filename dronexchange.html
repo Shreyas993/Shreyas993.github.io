@@ -160,6 +160,115 @@
 
     </section>
 
+    
+    <!-- TESTING METHODOLOGY & SCOPE -->
+    <section>
+
+        <h2>Testing Methodology &amp; Scope</h2>
+
+        <p>
+            The engagement combined manual penetration testing,
+            API request analysis, payment workflow validation,
+            source-level investigation, and cloud configuration
+            review. With authorised access to the designated test
+            environment, including an administrative test account,
+            the team examined application behaviour and relevant
+            backend and cloud security controls. Testing was
+            organised across six sprints, with findings documented,
+            prioritised, and followed through remediation and retesting.
+        </p>
+
+        <div class="feature-grid">
+
+            <!-- CARD 1 -->
+            <div class="feature-card hidden">
+                <h3>Authentication &amp; Access Control</h3>
+                <p>
+                    Assessed authentication and session behaviour,
+                    role-based permissions, and server-side
+                    authorisation boundaries. Used authorised test
+                    accounts and HTTP requests to examine whether
+                    access restrictions were correctly enforced.
+                </p>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="feature-card hidden">
+                <h3>Payment &amp; Business Logic</h3>
+                <p>
+                    Examined payment and order workflows, payment
+                    verification, webhook handling, and controls
+                    around sensitive payment-related actions.
+                    Used Stripe CLI to support investigation of
+                    payment integration behaviour in the test setup.
+                </p>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="feature-card hidden">
+                <h3>File Upload Security</h3>
+                <p>
+                    Evaluated file-upload validation, file handling,
+                    storage access, and path-related risks. Examined
+                    relevant upload workflows and supported
+                    retesting to verify remediation.
+                </p>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="feature-card hidden">
+                <h3>Cloud Configuration &amp; Permissions</h3>
+                <p>
+                    Reviewed authorised cloud resources and relevant
+                    configuration using the access granted for the
+                    test environment. Examined storage permissions,
+                    service-account access, and security settings
+                    for potential misconfiguration and excessive
+                    privileges.
+                </p>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="feature-card hidden">
+                <h3>API &amp; HTTP Testing</h3>
+                <p>
+                    Used Postman and Burp Suite to inspect and
+                    manipulate HTTP requests, examine API responses,
+                    and assess how the application handled
+                    unexpected inputs and security-sensitive actions.
+                    Browser developer tools provided additional
+                    visibility into client-side behaviour.
+                </p>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="feature-card hidden">
+                <h3>Firebase, Firestore &amp; Data Handling</h3>
+                <p>
+                    Investigated the local development environment
+                    and reviewed relevant Firebase and Firestore
+                    implementation details to understand data
+                    handling, application logic, and the security
+                    controls governing access to application data.
+                </p>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="feature-card hidden">
+                <h3>Retesting &amp; Risk Tracking</h3>
+                <p>
+                    Documented findings, maintained the risk register,
+                    tracked remediation through GitHub issues, and
+                    supported verification of fixes. Retesting
+                    helped establish the recorded status of findings
+                    at the conclusion of the engagement.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
 
     <!-- SCROLL ANIMATION -->
     <script>
