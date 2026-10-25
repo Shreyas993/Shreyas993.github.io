@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dronexchange Security Assessment | Shreyas Ramkumar</title>
+    <meta name="description"
+        content="A public-safe case study of a six-sprint marketplace penetration-testing engagement led by Shreyas Ramkumar.">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h3>Shreyas Ramkumar</h3>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- PROJECT HERO -->
+    <section class="project-showcase">
+
+        <div class="project-hero-card hidden">
+
+            <p class="project-label">
+                WEB APPLICATION PENETRATION TESTING
+            </p>
+
+            <h1>Dronexchange Marketplace Security Assessment</h1>
+
+            <p class="project-description">
+                Served as Security Lead and Test Coordinator for a
+                five-person team conducting a six-sprint penetration
+                test of a drone marketplace platform. Coordinated
+                security testing, maintained the risk register, tracked
+                remediation, and contributed to the final report and
+                prioritised remediation roadmap.
+            </p>
+
+            <div class="project-badges">
+                <span>Burp Suite</span>
+                <span>OWASP WSTG</span>
+                <span>OWASP Top 10</span>
+                <span>Jira</span>
+                <span>Risk Assessment</span>
+            </div>
+
+        </div>
+
+        <div class="project-showcase-image hidden">
+            <!-- We will add a suitable public-safe project visual later. -->
+            <div class="project-hero-card">
+                <p class="project-label">PROJECT SNAPSHOT</p>
+                <h2>Security Testing &amp; Remediation</h2>
+                <p>
+                    Six sprints of structured testing, finding
+                    verification, and remediation tracking.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PROJECT METRICS -->
+    <section>
+
+        <div class="stats-grid">
+
+            <div class="stat-card hidden">
+                <h2>6</h2>
+                <p>Testing Sprints</p>
+            </div>
+
+            <div class="stat-card hidden">
+                <h2>18</h2>
+                <p>Risk Register Findings</p>
+            </div>
+
+            <div class="stat-card hidden">
+                <h2>5</h2>
+                <p>Team Members</p>
+            </div>
+
+            <div class="stat-card hidden">
+                <h2>0</h2>
+                <p>Open Findings at Close</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SCROLL ANIMATION -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                } else {
+                    entry.target.classList.remove("show");
+                }
+            });
+        }, {
+            threshold: 0.2
+        });
+
+        const hiddenElements = document.querySelectorAll(".hidden");
+        hiddenElements.forEach(el => observer.observe(el));
+    </script>
+
+</body>
+</html>
